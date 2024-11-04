@@ -1,0 +1,562 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+
+}
+
+@font-face {
+  font-family: pisava1;
+  src: url(https://use.typekit.com/af/8d52a5/00000000000000003b9b3069/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3);
+
+  font-family: pisava2;
+  src: url(https://use.typekit.com/af/33a4a5/00000000000000003b9b3064/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3);
+
+  font-family: pisava3;
+  src: url(https://use.typekit.com/af/53c5dc/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3);
+
+  font-family: pisava4;
+  src: url(https://use.typekit.com/af/57cd6a/00000000000000003b9b3060/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3);
+
+  font-family: pisava5;
+  src: url(https://use.typekit.com/af/070a9f/00000000000000003b9b3068/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3);
+
+  font-family: pisava6;
+  src: url(https://use.typekit.com/af/228f63/00000000000000003b9b12e6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3);
+
+  font-family: pisava7;
+  src: url(https://use.typekit.com/af/085107/00000000000000003b9b3066/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3);
+
+  font-family: pisava8;
+  src: url(https://use.typekit.com/af/310426/00000000000000003b9b3067/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3);
+
+  font-family: pisava9;
+  src: url(https://use.typekit.com/af/a8244f/00000000000000003b9b306b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3);
+
+  font-family: pisava10;
+  src: url(https://use.typekit.com/af/a10112/00000000000000003b9b306c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3);
+
+  font-family: pisava11;
+  src: url(https://use.typekit.com/af/b3caa7/00000000000000003b9b3063/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3);
+
+  font-family: pisava12;
+  src: url(https://use.typekit.com/af/e14e28/00000000000000003b9b306d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3);
+
+  font-family: pisava13;
+  src: url(https://use.typekit.com/af/e991bd/00000000000000003b9b306a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3);
+
+}
+
+
+body {
+  /*font-family:pisava1;*/
+  font-weight: bold;
+  font-family: 'proxima-nova', sans-serif;
+
+}
+
+html,
+body {
+  height: 100%;
+
+}
+
+.glava {
+  height: 11%;
+  width: auto;
+  border-bottom: solid 1px #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.25%;
+  background-color: white;
+  padding-top: 0.25%;
+
+
+}
+
+.podGlavo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.obrazec {
+  width: 400px;
+  height: 720px;
+  margin-top: 1%;
+  border: solid 1px #e0e0e0;
+  border-radius: 4.5px;
+  background-color: white;
+
+}
+
+.login {
+  border-bottom: 2px solid #e0e0e0;
+  width: 46%;
+  float: right;
+  height: 50px;
+  padding-left: 1%;
+  margin-right: 4%;
+  background-color: white;
+  cursor: pointer;
+  border-width: 10%;
+
+}
+
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  padding-left: 40%;
+  cursor: pointer;
+  padding-top: 10%;
+  font-size: 14px;
+
+}
+.button2 {
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  padding-left: 40%;
+  cursor: pointer;
+  padding-top: 10%;
+  font-size: 14px;
+  font-family: pisava13;
+}
+
+.signup {
+  border-bottom: 2px solid #e0e0e0;
+  border-width: 10%;
+  float: left;
+  width: 44%;
+  height: 50px;
+  cursor: pointer;
+  background-color: white;
+  margin-left: 4%;
+  padding-right: 0.5%;
+}
+
+.active {
+  color: black;
+  font-weight: bold;
+  border-color: black;
+}
+
+#forma {
+  background-color: white;
+}
+
+#password-toggle {
+  position: absolute;
+  transform: translateX(-160%) translateY(65%);
+
+  background-color: white;
+  
+  color: black;
+  cursor: pointer;
+}
+
+#password-toggle.on {
+  content:url("slikce/eye-off.svg");
+}
+
+#password-toggle.off {
+  content:url("slikce/eye.svg");
+}
+
+.podgumbi {
+  margin-top: 22%;
+  background-color: white;
+  height: 80%;
+  width: 100%;
+
+}
+
+h1 {
+  font-size: 19px;
+  font-weight: 500;
+  padding-left: 8%;
+  background-color: white;
+}
+
+.loginFildi {
+  height: 70%;
+  width: 100%;
+  margin-top: 4%;
+  background-color: white;
+
+}
+
+#email {
+  height: 50px;
+  width: 77%;
+  margin-left: 9%;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+
+}
+
+#forma {
+  background-color: white;
+}
+
+input[type="email"] {
+  font-family: 'proxima-nova', sans-serif;
+  padding-left: 4%;
+  font-size: 15px;
+
+}
+
+.geslo {
+  height: 16%;
+  width: 100%;
+  /* border:1px solid red;*/
+  margin-top: 2%;
+  background-color: white;
+
+}
+
+#password {
+  height: 50px;
+  width: 77%;
+  margin-left: 9%;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+
+}
+
+input[type="password"] {
+  font-family: 'proxima-nova', sans-serif;
+  padding-left: 4%;
+  font-size: 15px;
+}
+
+input[type="text"] {
+  font-family: 'proxima-nova', sans-serif;
+  padding-left: 4%;
+  font-size: 15px;
+}
+
+#ime {
+  height: 50px;
+  width: 77%;
+  margin-left: 9%;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+}
+
+
+.pozabljenoGeslo {
+  height: 7%;
+  width: 100%;
+  background-color: white;
+  margin-top: -2%;
+
+
+}
+
+.kajuse {
+  text-decoration: none;
+  font-size: 11px;
+  color: black;
+  font-weight: 400;
+  background-color: white;
+  margin-left: 10%;
+
+
+}
+
+.gumbek {
+  margin-top: 2%;
+  background-color: white;
+
+}
+
+input[type="submit"] {
+  height: 50px;
+  width: 82%;
+  margin-left: 8.5%;
+  border: 1px solid #e0e0e0;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 600;
+
+}
+
+.tekst {
+  height: 15%;
+  width: 100%;
+  background-color: white;
+
+}
+
+.napisano {
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 11px;
+  line-height: 1.33;
+  font-weight: 500;
+  color: #949494;
+  background-color: white;
+  padding-top: 1%;
+  padding-left: 8%;
+  display: inline-block;
+}
+
+.pozabigeslo {
+  text-decoration: none;
+  float: right;
+  padding-right: 10.5%;
+  font-size: 11px;
+  color: black;
+  font-weight: 400;
+  background-color: white;
+}
+
+span {
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: 11px;
+  line-height: 1.33;
+}
+
+.podtekst {
+  height: 20%;
+  width: 100%;
+  color: #949494;
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 500;
+  background-color: white;
+  margin-top: 5%;
+
+
+}
+
+#levi {
+  border-bottom: 1px solid #949494;
+  ;
+  width: 37%;
+  float: left;
+  height: 10%;
+  margin-left: 8%;
+  background-color: white;
+
+
+}
+
+#desni {
+  border-bottom: 1px solid #949494;
+  ;
+  width: 36%;
+  float: right;
+  height: 10%;
+  margin-right: 10%;
+  background-color: white;
+
+
+}
+
+#or {
+  color: #949494;
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 2%;
+  font-family: 'proxima-nova', sans-serif;
+  padding-bottom: 30%;
+  background-color: white;
+
+}
+
+.geslo1 {
+  height: 15%;
+  width: 100%;
+  /* border:1px solid red;*/
+  margin-top: 2%;
+  background-color: white;
+}
+
+
+.ikonce {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin-top: -19px;
+
+
+
+
+}
+
+.ikonce .ikonca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  margin: 0 3px 0 5px;
+
+}
+
+.ikonce .ikonca .slikca {
+  display: block;
+
+}
+
+#vpodtekst {
+  padding-left: 40.5%;
+  color: black;
+  background-color: white;
+  margin-top: 3%;
+
+
+
+}
+
+.tla {
+  background-color: white;
+  height: 30px;
+  margin-top: 11%;
+}
+
+#spodnja {
+  color: black;
+  background-color: white;
+  padding-left: 25%;
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 14px;
+  line-height: 1.33;
+  font-weight: 500;
+  padding-top: 30%;
+}
+
+#spodnjalink {
+  color: rgb(3, 68, 3);
+  text-decoration: underline;
+  background-color: white;
+  cursor: pointer;
+}
+
+#mailfild {
+  margin-top: 0.5%;
+}
+
+#odkljukaj1 {
+  /* border:1px solid red;*/
+  height: 10%;
+  font-size: 15px;
+  background-color: white;
+
+}
+
+#odkljukaj2 {
+  /*border:1px solid green;*/
+  height: 15%;
+  background-color: white;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.custom-checkbox {
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-left: 10%;
+  margin-bottom: 2%;
+
+}
+
+.custom-checkbox.checked {
+  background-color: black;
+}
+
+.custom-checkbox.checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+
+
+
+.custom-checkbox1 {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-left: 10%;
+  margin-bottom: 8%;
+
+
+}
+
+.custom-checkbox1.checked {
+  background-color: black;
+}
+
+.custom-checkbox1.checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+
+
+}
+
+#trmsncondits {
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 11px;
+  line-height: 1.33;
+  font-weight: 500;
+  color: #949494;
+  background-color: white;
+  padding-top: 1%;
+  padding-left: 3%;
+  display: inline-block;
+}
+
+#marketing {
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 11px;
+  line-height: 1.33;
+  font-weight: 500;
+  color: #949494;
+  background-color: white;
+  margin-left: 3%;
+  display: inline-block;
+
+}
