@@ -34,51 +34,48 @@
           </div>
           <div class="podgumbi">
             <h1>Sign Up</h1>
-            <div class="loginFildi">
+            <form class="loginFildi" id="signupform">
 
-              <form id="forma">
-                <input type="text" id="ime" name="ime" placeholder="First Name*">
-              </form>
-
-
-              <div class="geslo1">
-                <form id="forma">
-                  <input type="text" id="ime" name="priimek" placeholder="Last Name*">
-                </form>
+              <div id="forma">
+                <input type="text" id="ime" name="ime" required placeholder="First Name*">
               </div>
 
 
+              <div class="geslo1">
+                <div id="forma">
+                  <input type="text" id="ime" name="priimek" required placeholder="Last Name*">
+                </div>
+              </div>
 
-              <form id="forma">
-                <input type="email" id="email" name="email" placeholder="Email Address*">
-              </form>
+              <div id="forma">
+                <input type="email" id="email" name="email" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                title="Please enter a valid email address (e.g., user@example.com)" placeholder="Email Address*">
+              </div>
 
               <div class="geslo">
-                <form id="forma">
-                  <input type="password" id="password" name="password" placeholder="Password*">
+                <div id="forma">
+                  <input type="password" id="password" name="password" required
+                  pattern="(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+                  title="Password must be at least 8 characters, with at least 1 uppercase letter, 1 number, and 1 special character (e.g., @$!%*?&)." placeholder="Password*">
                   <img id="password-toggle" class="on" alt="">
-                </form>
+                </div>
               </div>
               <div class="pozabljenoGeslo">
                 <span class="kajuse">At least 8 characters, 1 uppercase letter, 1 number & 1 symbol</span>
               </div>
               <div id="odkljukaj1">
-                <input type="checkbox" id="checkbox1">
-                <span class="custom-checkbox" onclick="toggleCheck()"></span>
+                <input type="checkbox" checked id="checkbox1">
+                <span class="custom-checkbox checked" onclick="toggleCheck()"></span>
                 <p id="trmsncondits">I have read and agree to the <span>Terms and Conditions</span> and<br>
                   <span>Privacy Policy.</span></p>
               </div>
               <div id="odkljukaj2">
-
                 <input type="checkbox" id="checkbox2">
                 <span class="custom-checkbox1" onclick="toggleCheck1()"></span>
                 <p id="marketing">We will send you emails regularly with information and <br>offers about StockX.
                   You can unsubscribe from the emails<br> at any time via the link in the emails or from your
                   account<br> settings.</p>
-
-
-
-
               </div>
               <div class="gumbek">
                 <input type="submit" id="submit" value="Sign Up">
@@ -133,23 +130,27 @@
 
                 </div>
               </div>
+            </form>
 
+            <div class="toastBox"></div>
 
-
-            </div>
             <div class="tla">
-              <p id="spodnja">Already have an account?<a id="spodnjalink"> Log In</a></p>
+              <p id="spodnja">Already have an account?<a id="spodnjalink" href="index.html"> Log In</a></p>
             </div>
           </div>
-
-
-
-
-
         </div>
       </div>
     </div>
   </div>
+
+  <script>
+    document.getElementById("signupform").addEventListener("submit", function (event) {
+      // Prevent page refresh
+      event.preventDefault();
+
+      showToast("Signed up successfully!");
+    });
+  </script>
 </body>
 
 </html>

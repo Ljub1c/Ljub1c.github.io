@@ -34,15 +34,20 @@
           </div>
           <div class="podgumbi">
             <h1>Log In</h1>
-            <div class="loginFildi">
-              <form id="forma">
-                <input type="email" id="email" name="email" placeholder="Email Address*">
-              </form>
+            <form class="loginFildi" id="loginform">
+              <div id="forma">
+                <input type="email" id="email" name="email" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                title="Please enter a valid email address (e.g., user@example.com)"
+                placeholder="Email Address*">
+              </div>
               <div class="geslo">
-                <form id="forma">
-                  <input type="password" id="password" name="password" placeholder="Password*">
+                <div id="forma">
+                  <input type="password" id="password" name="password"
+                    title="Password must be at least 8 characters, with at least 1 uppercase letter, 1 number, and 1 special character (e.g., @$!%*?&)."
+                    placeholder="Password*">
                   <img id="password-toggle" class="on" alt="">
-                </form>
+                </div>
               </div>
               <div class="pozabljenoGeslo">
                 <a href="url" class="pozabigeslo">Forgot Password?</a>
@@ -102,23 +107,33 @@
 
                 </div>
               </div>
+            </form>
 
+            <div class="toastBox"></div>
 
-
-            </div>
             <div class="tla">
-              <p id="spodnja">Need an account?<a id="spodnjalink"> Sign Up</a></p>
+              <p id="spodnja">Need an account?<a id="spodnjalink" href="second.html"> Sign Up</a></p>
             </div>
           </div>
-
-
-
-
-
         </div>
       </div>
     </div>
   </div>
+
+  <script>
+    document.getElementById("loginform").addEventListener("submit", function (event) {
+      // Prevent page refresh
+      event.preventDefault();
+
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      console.log("Email:", email);
+      console.log("Password:", password);
+
+      showToast("Logged in successfully!");
+    });
+  </script>
 </body>
 
 </html>
